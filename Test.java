@@ -86,16 +86,10 @@ class Member {
 
     //display method
     void display() {
-        System.out.println("MemberID: " + MemberID);
-        System.out.println("FirstName: " + FirstName);
-        System.out.println("LastName: " + LastName);
-        System.out.println("Handicap: " + Handicap);
-        System.out.println("Gender: " + Gender);
-        System.out.println("Team: " + Team);
-        System.out.println("MemberType: " + MemberType);
-        System.out.println("Coach: " + Coach);
-        System.out.println("Phone: " + Phone);
-        System.out.println("JoinDate: " + JoinDate.dateDisplay());
+        System.out.printf("|%-8s| |%-9s| |%-8s| |%-8s| |%-6s| |%-5s| |%-10s| |%-5s| |%-6s| |%-11s| %n","MemberID","FirstName","LastName","Handicap","Gender","Team","MemberType","Coach","Phone","JoinDate");        
+        System.out.printf(
+                "|%-8s| |%-9s| |%-8s| |%-8s| |%-6s| |%-5s| |%-10s| |%-5s| |%-6s| |%-11s| %n",MemberID , FirstName , LastName , Handicap , Gender, Team
+                , MemberType , Coach , Phone , JoinDate.dateDisplay());
         System.out.println();
     }
     
